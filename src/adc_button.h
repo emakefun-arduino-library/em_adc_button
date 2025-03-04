@@ -62,8 +62,77 @@ class AdcButton {
    */
   ButtonType GetButtonType(void);
 
+  /**
+   * @~Chinese
+   * @brief 对读取的按钮值进行去抖动处理
+   * @return 返回去抖动后的按钮值
+   */
+  /**
+   * @~English
+   * @brief Debounce the button value read
+   * @return The debounced button value
+   */
+  ButtonType DebouncedValue(void);
+
+  /**
+   * @~Chinese
+   * @brief 刷新按键状态。
+   */
+  /**
+   * @~English
+   * @brief Refresh button status.
+   */
+  void Tick(void);
+
+  /**
+   * @~Chinese
+   * @brief 判断按键是否按下。
+   * @param key 按键类型。
+   * @return 返回按键是否按下。
+   */
+  /**
+   * @~English
+   * @brief Determine whether the button is pressed.
+   * @param key Button type.
+   * @return Whether the button is pressed.
+   */
+  bool IsPressed(ButtonType key);
+  
+  /**
+   * @~Chinese
+   * @brief 判断按键是否正在按下。
+   * @param key 按键类型。
+   * @return 返回按键是否正在按下。
+   */
+  /**
+   * @~English
+   * @brief Determine whether the button is being pressed.
+   * @param key Button type.
+   * @return Whether the button is being pressed.
+   */
+  bool IsPressing(ButtonType key);
+
+  /**
+   * @~Chinese
+   * @brief 判断按键是否松开。
+   * @param key 按键类型。
+   * @return 返回按键是否松开。
+   */
+  /**
+   * @~English
+   * @brief Determine whether the button is released.
+   * @param key Button type.
+   * @return Whether the button is released.
+   */
+  bool IsReleased(ButtonType key);
+
  private:
   uint8_t pin_;
+  ButtonType current_button_type_;
+  ButtonType last_button_type_ = kButtonTypeNone;
+  ButtonType last_key_state_ = kButtonTypeNone;
+  ButtonType current_key_state_ = kButtonTypeNone;
+  mutable uint64_t last_read_time_ = 0;
 };
 }  // namespace em
 #endif

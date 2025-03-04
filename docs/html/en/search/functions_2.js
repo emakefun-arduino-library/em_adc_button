@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['version_0',['Version',['../adc__button__lib_8h.html#abd90f730a6ee8d06c1f301622cbae133',1,'em::adc_button_lib']]]
+  ['getbuttontype_0',['GetButtonType',['../classem_1_1_adc_button.html#ac6e742e7167abcf0d1b5a05125a7ab1b',1,'em::AdcButton']]]
 ];

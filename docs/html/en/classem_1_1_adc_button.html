@@ -132,10 +132,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac6e742e7167abcf0d1b5a05125a7ab1b" id="r_ac6e742e7167abcf0d1b5a05125a7ab1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a04df5f3422e30209e31e038fdd801003">ButtonType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6e742e7167abcf0d1b5a05125a7ab1b">GetButtonType</a> (void)</td></tr>
 <tr class="memdesc:ac6e742e7167abcf0d1b5a05125a7ab1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get button type.  <br /></td></tr>
 <tr class="separator:ac6e742e7167abcf0d1b5a05125a7ab1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf77ed7d620f3a89eb27035b3d9e30ff" id="r_acf77ed7d620f3a89eb27035b3d9e30ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a04df5f3422e30209e31e038fdd801003">ButtonType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf77ed7d620f3a89eb27035b3d9e30ff">DebouncedValue</a> (void)</td></tr>
+<tr class="memdesc:acf77ed7d620f3a89eb27035b3d9e30ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debounce the button value read.  <br /></td></tr>
+<tr class="separator:acf77ed7d620f3a89eb27035b3d9e30ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd29a73d189d18fffd5fe052d87532a9" id="r_afd29a73d189d18fffd5fe052d87532a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd29a73d189d18fffd5fe052d87532a9">Tick</a> (void)</td></tr>
+<tr class="memdesc:afd29a73d189d18fffd5fe052d87532a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh button status.  <br /></td></tr>
+<tr class="separator:afd29a73d189d18fffd5fe052d87532a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8fb845769148732fe1d5c02b14eba3" id="r_a2d8fb845769148732fe1d5c02b14eba3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d8fb845769148732fe1d5c02b14eba3">IsPressed</a> (<a class="el" href="#a04df5f3422e30209e31e038fdd801003">ButtonType</a> key)</td></tr>
+<tr class="memdesc:a2d8fb845769148732fe1d5c02b14eba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the button is pressed.  <br /></td></tr>
+<tr class="separator:a2d8fb845769148732fe1d5c02b14eba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42614785edb416f648e327f11fb8ad6f" id="r_a42614785edb416f648e327f11fb8ad6f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42614785edb416f648e327f11fb8ad6f">IsPressing</a> (<a class="el" href="#a04df5f3422e30209e31e038fdd801003">ButtonType</a> key)</td></tr>
+<tr class="memdesc:a42614785edb416f648e327f11fb8ad6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the button is being pressed.  <br /></td></tr>
+<tr class="separator:a42614785edb416f648e327f11fb8ad6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4672fb7269cc580f5041319802634680" id="r_a4672fb7269cc580f5041319802634680"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4672fb7269cc580f5041319802634680">IsReleased</a> (<a class="el" href="#a04df5f3422e30209e31e038fdd801003">ButtonType</a> key)</td></tr>
+<tr class="memdesc:a4672fb7269cc580f5041319802634680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the button is released.  <br /></td></tr>
+<tr class="separator:a4672fb7269cc580f5041319802634680"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classem_1_1_adc_button.html" title="AdcButton is a driver class for the ADC button module.">AdcButton</a> is a driver class for the ADC button module. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="get_button_type_8ino-example.html#_a0">get_button_type.ino</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="get_button_status_8ino-example.html#_a0">get_button_status.ino</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="adc__button_8h_source.html#l00023">23</a> of file <a class="el" href="adc__button_8h_source.html">adc_button.h</a>.</p>
@@ -195,6 +210,28 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="acf77ed7d620f3a89eb27035b3d9e30ff" name="acf77ed7d620f3a89eb27035b3d9e30ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf77ed7d620f3a89eb27035b3d9e30ff">&#9670;&#160;</a></span>DebouncedValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a04df5f3422e30209e31e038fdd801003">AdcButton::ButtonType</a> em::AdcButton::DebouncedValue </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Debounce the button value read. </p>
+<dl class="section return"><dt>Returns</dt><dd>The debounced button value </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="adc__button_8cpp_source.html#l00031">31</a> of file <a class="el" href="adc__button_8cpp_source.html">adc_button.cpp</a>.</p>
+
+</div>
+</div>
 <a id="ac6e742e7167abcf0d1b5a05125a7ab1b" name="ac6e742e7167abcf0d1b5a05125a7ab1b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac6e742e7167abcf0d1b5a05125a7ab1b">&#9670;&#160;</a></span>GetButtonType()</h2>
 
@@ -214,6 +251,111 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>What type of button is pressed. </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="adc__button_8cpp_source.html#l00015">15</a> of file <a class="el" href="adc__button_8cpp_source.html">adc_button.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a2d8fb845769148732fe1d5c02b14eba3" name="a2d8fb845769148732fe1d5c02b14eba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d8fb845769148732fe1d5c02b14eba3">&#9670;&#160;</a></span>IsPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool em::AdcButton::IsPressed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a04df5f3422e30209e31e038fdd801003">ButtonType</a></td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether the button is pressed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Button type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the button is pressed. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="adc__button_8cpp_source.html#l00046">46</a> of file <a class="el" href="adc__button_8cpp_source.html">adc_button.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a42614785edb416f648e327f11fb8ad6f" name="a42614785edb416f648e327f11fb8ad6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42614785edb416f648e327f11fb8ad6f">&#9670;&#160;</a></span>IsPressing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool em::AdcButton::IsPressing </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a04df5f3422e30209e31e038fdd801003">ButtonType</a></td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether the button is being pressed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Button type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the button is being pressed. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="adc__button_8cpp_source.html#l00050">50</a> of file <a class="el" href="adc__button_8cpp_source.html">adc_button.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a4672fb7269cc580f5041319802634680" name="a4672fb7269cc580f5041319802634680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4672fb7269cc580f5041319802634680">&#9670;&#160;</a></span>IsReleased()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool em::AdcButton::IsReleased </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a04df5f3422e30209e31e038fdd801003">ButtonType</a></td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether the button is released. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Button type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the button is released. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="adc__button_8cpp_source.html#l00054">54</a> of file <a class="el" href="adc__button_8cpp_source.html">adc_button.cpp</a>.</p>
+
+</div>
+</div>
+<a id="afd29a73d189d18fffd5fe052d87532a9" name="afd29a73d189d18fffd5fe052d87532a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd29a73d189d18fffd5fe052d87532a9">&#9670;&#160;</a></span>Tick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void em::AdcButton::Tick </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Refresh button status. </p>
+
+<p class="definition">Definition at line <a class="el" href="adc__button_8cpp_source.html#l00041">41</a> of file <a class="el" href="adc__button_8cpp_source.html">adc_button.cpp</a>.</p>
 
 </div>
 </div>
